@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <title>Clima</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="current-city">
+            <div class="weather-info">
+                <div class="weather-info-icon">
+                    <img width="35px" id="img-temp" src="" alt="" />
+                    <span id="description"></span>
+                </div>
+                <div class="weather-info-temp">
+                    <span><span id="temp">60</span> °C</span>
+                </div>
+            </div>
+
+            <div class="current-city-container">
+                <div class="city-info">
+                    <img width="20px" src="./icons/point.png" />
+                    <span id="location">Bogota</span>
+                    <div class="location"></div>
+                    <img width="100px" height="100px" src="./icons/map.png" alt="" />
+                </div>
+            </div>
+        </div>
+
+        <div class="other-cities">
+            <div class="bottom-info">
+                <div class="bottom-info-forecast">
+                    <p class="title"><strong>3 Days</strong> Forecast</p>
+
+                    <div class="weather-card">
+                        <div class="weather-card-icon">
+                            <img id="img1" src="" alt="" />
+                        </div>
+                        <div class="weather-card-day">
+                            <span id="day1">monday</span>
+                            <span id="description1" class="text-muted">clear</span>
+                        </div>
+                        <div class="weather-card-temp">
+                            <span><span id="temp1-min"></span> ° / <span id="temp1-max"></span> °</span>
+                        </div>
+                    </div>
+
+                    <div class="weather-card">
+                        <div class="weather-card-icon">
+                            <img id="img2" src="" alt="" />
+                        </div>
+                        <div class="weather-card-day">
+                            <span id="day2">monday</span>
+                            <span id="description2" class="text-muted">clear</span>
+                        </div>
+                        <div class="weather-card-temp">
+                            <span><span id="temp2-min"></span> ° / <span id="temp2-max"></span> °</span>
+                        </div>
+                    </div>
+
+                    <div class="weather-card">
+                        <div class="weather-card-icon">
+                            <img id="img3" src="" alt="" />
+                        </div>
+                        <div class="weather-card-day">
+                            <span id="day3">monday</span>
+                            <span id="description3" class="text-muted">clear</span>
+                        </div>
+                        <div class="weather-card-temp">
+                            <span><span id="temp3-min"></span> ° / <span id="temp3-max"></span> °</span>
+                        </div>
+                    </div>
+                </div><br>
+
+                <div class="bottom-info-place">
+                    <p class="title"><strong>Place to</strong> Visit</p>
+
+                    <div class="place-card1">
+                        <img width="10px" src="./icons/point.png" />
+                        <span>Arab Street Singapore</span>
+                    </div>
+                </div>
+
+                <div class="bottom-info-network">
+                    <div class="place-card-reviews">
+                        <span>+ Top Reviews</span>
+                        <img class="top-imagen" src="./icons/juan.jpg" alt="">
+                        <img class="top-imagen" src="./icons/rosa.jpg" alt="">
+                        <img class="top-imagen" src="./icons/ricardo.jpg" alt="">
+                        <img class="top-imagen" src="./icons/add.png" alt="">
+                    </div>
+
+                    <div class="bottom-info-place2">
+
+                        <div class="place-card2">
+                            <img width="10px" src="./icons/point.png" />
+                            <span>Art Science Museum</span>
+                        </div>
+
+                        <div class="place-card3">
+                            <img width="10px" src="./icons/point.png" />
+                            <span>Fountain of Wealth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-side">
+                <div class="side-card">
+                    <div class="side-card-icon">
+                        <img id="img-lyon" class="img-ico" src="" alt="">
+                    </div>
+                    <div class="side-card-name">
+                        <span><strong><span id="lyon">lyon</span></strong> Francia |</span>
+                    </div>
+                    <div class="side-card-temp">
+                        <span><span id="temp-lyon"></span> C°</span>
+                    </div>
+                </div>
+
+                <div class="side-card">
+                    <div class="side-card-icon">
+                        <img id="img-france" class="img-ico" src="" alt="">
+                    </div>
+                    <div class="side-card-name">
+                        <span><strong><span id="paris">lyon</span></strong> Francia |</span>
+                    </div>
+                    <div class="side-card-temp">
+                        <span><span id="temp-france"></span> C°</span>
+                    </div>
+                </div>
+
+                <div class="side-card">
+                    <div class="side-location">
+                        <button class="button">Add location</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

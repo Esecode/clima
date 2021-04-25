@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #d6dde5;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+.text-muted {
+  color: #ccc;
+}
+
+.mr5 {
+  margin-right: 5px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.button {
+  background-color: #008cba;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-size: 9px;
+  border-radius: 23px;
+}
+
+.contenedor {
+  max-width: 1200px;
+  width: 90%;
+  margin: 5% auto;
+  background: #f9fbfc;
+  border-radius: 30px;
+}
+
+.current-city {
+  width: 100%;
+  padding: 40px;
+  border-radius: 20px;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .current-city .current-city {
+    flex-direction: column;
+  }
+}
+@media (max-width: 992px) {
+  .current-city .current-city {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .current-city .current-city {
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .current-city .current-city {
+    flex-direction: column;
+  }
+}
+@media (max-width: 360px) {
+  .current-city .current-city {
+    flex-direction: column;
+  }
+}
+.current-city .city-info {
+  font-weight: bold;
+  font-size: 26px;
+}
+.current-city .weather-info {
+  width: 80px;
+  left: 0;
+  position: absolute;
+  top: 30%;
+}
+.current-city .weather-info-icon {
+  background: #31338a;
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+  height: 80px;
+  border-top-right-radius: 35px 30px;
+}
+.current-city .weather-info-temp {
+  background: #7d68eb;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px;
+  text-align: center;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  box-shadow: 3px 22px 33px #999;
+  border-bottom-right-radius: 30px 24px;
+}
+.current-city .current-city-container {
+  background-image: url("../icons/atmosphere.jpg");
+  background-color: #cccccc;
+  box-shadow: 2px 2px 5px #999;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  padding: 83px 105px;
+}
+
+.other-cities {
+  width: 100%;
+  padding: 0 40px 30px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+@media (max-width: 1200px) {
+  .other-cities .other-cities {
+    flex-direction: column;
+  }
+}
+@media (max-width: 992px) {
+  .other-cities .other-cities {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .other-cities .other-cities {
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .other-cities .other-cities {
+    flex-direction: column;
+  }
+}
+@media (max-width: 360px) {
+  .other-cities .other-cities {
+    flex-direction: column;
+  }
+}
+.other-cities .bottom-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+.other-cities .bottom-info .bottom-info-forecast {
+  width: fit-content;
+}
+.other-cities .bottom-info .bottom-info-forecast .weather-card {
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 5px #999;
+  border-radius: 32px;
+  margin-top: 15px;
+  margin-right: 65px;
+  background: #fff;
+  width: 242px;
+  height: 84px;
+}
+.other-cities .bottom-info .bottom-info-forecast .weather-card-day {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: justify;
+  padding: 0px 10px;
+}
+.other-cities .bottom-info .bottom-info-forecast .weather-card-temp {
+  background: #7d68eb;
+  color: #fff;
+  border-radius: 30px;
+  padding: 37px 0px;
+  margin-left: auto;
+  width: 140px;
+  height: 90px;
+  text-align: center;
+  font-weight: bold;
+}
+.other-cities .bottom-info .bottom-info-forecast .weather-card-icon {
+  padding: 0px 10px;
+}
+.other-cities .bottom-info .bottom-info-place {
+  width: fit-content;
+}
+.other-cities .bottom-info .bottom-info-place .place-card1 {
+  background-image: url("../icons/edificio.jpg");
+  background-color: #cccccc;
+  box-shadow: 2px 2px 5px #999;
+  height: 288px;
+  width: 215px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  padding: 41px 9px;
+  text-align: justify;
+  color: #fff;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.other-cities .bottom-info .bottom-info-network {
+  width: fit-content;
+}
+.other-cities .bottom-info .bottom-info-network .place-card-reviews {
+  font-size: 11px;
+  display: flex;
+  margin-right: 43px;
+  width: 158px;
+  height: 21px;
+  font-weight: bold;
+}
+.other-cities .bottom-info .bottom-info-network .bottom-info-place2 {
+  width: fit-content;
+}
+.other-cities .bottom-info .bottom-info-network .bottom-info-place2 .place-card2 {
+  background-image: url("../icons/museum.jpg");
+  background-color: #cccccc;
+  box-shadow: 2px 2px 5px #999;
+  height: 75px;
+  width: 215px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  padding: 8px 22px;
+  text-align: justify;
+  color: #fff;
+  display: flex;
+  margin: 25px;
+}
+.other-cities .bottom-info .bottom-info-network .bottom-info-place2 .place-card3 {
+  background-image: url("../icons/fountain.jpg");
+  background-color: #cccccc;
+  box-shadow: 2px 2px 5px #999;
+  height: 174px;
+  width: 215px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  padding: 23px 26px;
+  text-align: justify;
+  color: #fff;
+  margin: 25px;
+}
+.other-cities .bottom-side {
+  margin-top: -81px;
+  position: relative;
+}
+.other-cities .bottom-side .side-card {
+  display: flex;
+  background: #fff;
+  box-shadow: 2px 2px 5px #999;
+  border-radius: 14px;
+  margin-top: 13px;
+  height: 98px;
+  width: 234px;
+}
+.other-cities .bottom-side .side-card-icon {
+  padding: 10px 10px;
+  background: #d6dde5;
+  border-radius: 14px;
+  width: 70px;
+  height: 70px;
+  box-shadow: 2px 2px 5px #999;
+}
+.other-cities .bottom-side .side-card-name {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: justify;
+  padding: 40px 10px;
+}
+.other-cities .bottom-side .side-card-temp {
+  color: #000;
+  padding: 42px 0px;
+  margin-left: auto;
+  width: 105px;
+  text-align: left;
+}
+.other-cities .bottom-side .side-card .side-location {
+  background-image: url("../icons/locations.jpg");
+  background-color: #cccccc;
+  box-shadow: 2px 2px 5px #999;
+  height: 158px;
+  width: 236px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  padding: 11px 60px;
+}
+
+/*# sourceMappingURL=style.css.map */
